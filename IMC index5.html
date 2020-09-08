@@ -1,0 +1,40 @@
+<html>
+   <head>
+     <script>
+	   function Calculate()
+	   {
+			var w = document.getElementById("weight").value 
+			var h = document.getElementById("height").value;
+			var t;
+			t = (w * 703)/(Math.pow(h,2));
+			document.getElementById("total").value = t;
+			
+		};
+		imc=kg/(Math.pow(m,2))
+		</script>
+</head>
+<body>
+	<br>
+	<div align="center">
+		<div align="center"style="width: 400px; height: 400px; align-content: center; border: 0.2ch; border-style: groove">
+			<br>
+			<h3>Calcula el Indice Masa Corporal (IMC):</h3>
+			<br>
+			<label>Introduce tu peso en libras:</label>
+			<br>
+			<input type="text" id="weight" name="weight"/>
+			<br>
+			<label>Introduce su altura en pulgadas:</label>
+			<br>
+		    <input type="text" id="height" name="height"/>
+			<br>
+			<label> Masa Corporal</label>
+			<br>
+			<input type= "text" id="total" name="total"
+			<br>
+		    <input type="button" value= "Calcular" onclick="Calculate()" /><br><br>
+			<br>
+	    </div>
+	</div>
+</body>
+</html>
